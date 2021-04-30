@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T17:22:22.365Z",
+    "end": "2021-04-30T17:22:41.741Z",
+    "duration": 19376,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "004fc6bf-bf19-4e70-970e-624f21998403",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f3f5950-eb42-4bc1-abd2-ff5578b6996a",
+          "title": "Visual Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test snapshot",
+              "fullTitle": "Visual Test Test snapshot",
+              "timedOut": null,
+              "duration": 19152,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/login');\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login'); // ->> we are at index (login) page!!\ncy.log('At login page!');\ncy.percySnapshot('login-page');\ncy.get(':nth-child(1) > input').type('tester02');\ncy.get(':nth-child(2) > input').type('sppm7qncqmVft5uECkwjLcLdEJGzM3Cw');\ncy.get('.btn').click();\ncy.contains('Welcome tester02');\ncy.wait(3000); // ->> we are at dashboard page!\ncy.log('At dashboard page!');\ncy.percySnapshot('dashboard-page');\ncy.wait(3000); // ->>We are at client page !\ncy.log('At client page');\ncy.get('.blocks > :nth-child(2) > .btn').click();\ncy.percySnapshot('client-page');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "b92e9f34-ac79-4a8d-a709-c6291cfd5970",
+              "parentUUID": "6f3f5950-eb42-4bc1-abd2-ff5578b6996a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b92e9f34-ac79-4a8d-a709-c6291cfd5970"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19152,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

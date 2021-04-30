@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T16:45:53.309Z",
+    "end": "2021-04-30T16:46:19.927Z",
+    "duration": 26618,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0776c289-d5e1-4a11-bfb4-4f320e4d9acd",
+      "title": "",
+      "fullFile": "cypress/integration/page-objects.spec.js",
+      "file": "cypress/integration/page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+          "title": " page-objects",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create client and verify",
+              "fullTitle": " page-objects create client and verify",
+              "timedOut": null,
+              "duration": 8155,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardPage.viewclients(\"Clients\");\nclientsPage.viewClientNew(\"New Client\");\nnewclientPage.createClient(randomName, randomMail, randomPhone, \"Clients\");\nclientsPage.verifyLastClient(randomName, randomMail, randomPhone);\ndashboardPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "0bb49937-dac6-439a-af16-c1de40b880c7",
+              "parentUUID": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "View Room ",
+              "fullTitle": " page-objects View Room ",
+              "timedOut": null,
+              "duration": 5595,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardPage.viewRoom(\"Room\");\nroomPage.viewRoom(\"New Room\");\nnewRoomPage.createRoom(\"double\", \"101\", \"1\", \"checked\", randomPrice, \"balcony\", \"Rooms\");\ndashboardPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "cb8ac1b6-9fa3-4e58-a503-6dddd1c8d88b",
+              "parentUUID": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "view bills page",
+              "fullTitle": " page-objects view bills page",
+              "timedOut": null,
+              "duration": 3999,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardPage.viewBills(\"Bill\");\nbillsPage.viewBills(\"New Bill\");\nnewBillPage.createBill(randomPrice, \"checked\", \"Bills\");\ndashboardPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "71c60ffb-1398-45a1-bcad-34f13fdf3aa5",
+              "parentUUID": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "view Reservations page ",
+              "fullTitle": " page-objects view Reservations page ",
+              "timedOut": null,
+              "duration": 5162,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardPage.viewReservations(\"Reservations\");\nreservationsPage.viewReservations(\"New Reservation\");\nnewReservationPage.createReservation(\"2020-04-01\", \"2020-04-04\", \"Jonas Hellman (#1)\", \"Floor 1, Room 102\", \"1\", \"Reservations\");\ndashboardPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "4b528de4-ae6c-4ad3-bfe4-6bf391367287",
+              "parentUUID": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete last room",
+              "fullTitle": " page-objects delete last room",
+              "timedOut": null,
+              "duration": 3506,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardPage.viewRoom(\"Rooms\");\ndeleteRoomPage.deleteLastRoom();\ndashboardPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "2bfde67b-9653-4ce7-aaad-745201c3a086",
+              "parentUUID": "b6740430-b172-4f36-84bc-80d6a6160f3f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0bb49937-dac6-439a-af16-c1de40b880c7",
+            "cb8ac1b6-9fa3-4e58-a503-6dddd1c8d88b",
+            "71c60ffb-1398-45a1-bcad-34f13fdf3aa5",
+            "4b528de4-ae6c-4ad3-bfe4-6bf391367287",
+            "2bfde67b-9653-4ce7-aaad-745201c3a086"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26417,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
